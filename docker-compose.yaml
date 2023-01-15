@@ -1,0 +1,85 @@
+version: "3.8"
+services:
+  registry:
+    container_name: eurika-service
+    image: eurikamicroservice
+    ports: 
+      - 8761:8761
+    healthcheck:
+      test: curl --fail http://localhost:8761 || echo "Error from eurika-server"
+      interval: 60s
+      retries: 5
+      start_period: 20s
+      timeout: 10s
+    networks : 
+      - nft-master_net
+
+
+  cloud_gateway:
+      container_name: cloud-service
+      image: gatewaymicroservice
+      environment:
+        - eurika.client.service-url.defaultZone=http://registry:8761/eurika/
+      ports:
+        - 9999:9999
+
+      healthcheck:
+        test: curl --fail http://localhost:9999 || echo "Error from getway-service"
+        interval: 60s
+        retries: 5
+        start_period: 20s
+        timeout: 10s
+      depends_on:
+        registry:
+          condition: service_healthy
+      networks: 
+        - nft-master_net
+
+  panier:
+      container_name: panier-service
+      image: paniermicroservice
+      environment:
+        - eurika.client.service-url.defaultZone=http://registry:8761/eurika/
+      ports: 
+        - 9002:9002
+      healthcheck:
+        test: curl --fail http://localhost:9002 || echo "Error from eurika-server"
+        interval: 60s
+        retries: 5
+        start_period: 20s
+        timeout: 10s
+      depends_on:
+        registry:
+          condition: service_healthy 
+        cloud_gateway:
+          condition: service_started
+      networks : 
+        - nft-master_net
+        
+  register:
+      container_name: register-service
+      image: registermicroservice
+      environment:
+        - eurika.client.service-url.defaultZone=http://registry:8761/eurika/
+      ports: 
+        - 9001:9001
+      healthcheck:
+        test: curl --fail http://localhost:9001 || echo "Error from eurika-server"
+        interval: 60s
+        retries: 5
+        start_period: 20s
+        timeout: 10s
+      depends_on:
+        registry:
+          condition: service_healthy 
+        cloud_gateway:
+          condition: service_started
+      networks : 
+        - nft-master_net
+
+
+networks:
+  nft-master_net:
+  
+
+

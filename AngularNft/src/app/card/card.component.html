@@ -1,0 +1,39 @@
+<!-- 
+<div>
+  <div>
+    <div class="background">
+      <div *ngFor="let nft of panierData">
+        <div class="product"  >
+          <img src="../../assets/40.jpg" alt="Product 1" width="200" height="200" >
+          <button class="add-to-cart-button" >Delete from Card</button>
+          <button class="add-to-cart-button" (click)="transf()">buy</button>
+          <button class="add-to-cart-button" (click)="DeleteData()">Delete from Card</button>
+          <div>
+            <p>NFT: {{ nft.nftName}}</p>
+            <p>Coll: {{ nft.nameofcollection}}</p>
+          </div>
+        </div>
+     </div>
+    </div>
+  </div>
+</div> -->
+
+  <div class="background">
+    <div class ="product-list">
+      <!-- <button  type="button" class="btn btn-outline-primary btn-sm" (click)="onGetProfile()">afficher</button> -->
+      <p class="h3">Thank you for adding this beautiful NFT(s) to your card!</p>
+      <!-- <p class="h3" *ngFor="let p of profile" >{{p.name}}</p> -->
+      <div *ngFor="let nft of panierData">
+        <div class="product">
+          <img src="assets/40.jpg" alt="Product 1" alt="Product 1" width="200" height="200">
+          <div >
+            <p>NFT: {{ nft.nftName }}</p>
+            <p>COLL: {{ nft.nameofcollection }}</p>
+            <button class="add-to-cart-button" (click)="Buythisnft()">buy</button>
+            <button class="add-to-cart-button" (click)="Deletecard(nft.id)">Delete from Card</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

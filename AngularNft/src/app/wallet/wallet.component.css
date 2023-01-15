@@ -1,0 +1,15 @@
+/* .custom-gradient {
+  background: linear-gradient(to right, rgb(134, 189, 134), rgb(101, 101, 214));
+} */
+.background {
+  /* background-image:url( '../../assets/Back.png'); */
+  background-size: cover;
+  background-color:   bisque; 
+  position: fixed;
+  top: 60px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}

@@ -1,0 +1,57 @@
+<div class="background">
+    <div class="d-flex justify-content-around align-items-center h-200 w-100" style="margin-top: 200px;">
+        <table>
+            <h1 class="text-muted" *ngIf="!walletConnected">Connect Your Wallet </h1>
+            <h1 class="text-muted" *ngIf="walletConnected">Connected Ethereum Wallet</h1>
+            <div >
+            <tr  *ngIf="!walletConnected">
+                <td >
+                    <div class="d-flex align-items-stretch">
+                        <tr>
+                            <div style="height: 50px !important;">
+                                <img src="assets/metamask.ico" alt="meta" style="height: 50px !important; ">
+                            </div>
+                        </tr>
+                        <div class="py-2">   
+                            <button type="button" class="btn btn-outline-primary" (click)="connectToWallet()">MetaMask</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr *ngIf="!walletConnected">
+                <td>
+                    <div class="d-flex align-items-stretch">
+                        <tr>
+                            <div style="height: 50px !important;">
+                                <img src="assets/coinbase.ico" alt="meta" style="height: 50px !important; ">
+                            </div>
+                        </tr>
+                        <div class="py-2">   
+                            <button type="button" class="btn btn-outline-primary">CoinBase</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr *ngIf="!walletConnected">
+                <td>
+                    <div class="d-flex align-items-stretch">
+                        <tr>
+                            <div style="height: 50px !important;">
+                                <img src="assets/bitkeep.ico" alt="meta" style="height: 50px !important; ">
+                            </div>
+                        </tr>
+                        <div class="py-2">   
+                            <button type="button" class="btn btn-outline-primary">BitKeep</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <div *ngIf="walletConnected" class="bg-gradient-to-r p-2 rounded-xl custom-gradient">
+                        <label class="text-white">{{walletId}}</label>
+                </div>
+            </tr>
+        </div>
+        </table>
+    </div>
+</div>

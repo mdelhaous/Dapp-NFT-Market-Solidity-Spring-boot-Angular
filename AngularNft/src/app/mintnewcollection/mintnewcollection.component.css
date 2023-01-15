@@ -1,0 +1,49 @@
+
+  .background {
+    /* background-image:url( '../../assets/Back.png'); */
+    background-size: cover;
+    background-color:   bisque; 
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .logo {
+    background-image: url('../../assets/nft-castle-logo.png');
+    width: 200px;
+    height: 200px;
+   
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 0 16px 0;
+  }
+  .slogan {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(5, 2, 2);
+    text-align: center;
+  }
+  .platform-name {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(87, 14, 14);
+    text-align: center;
+  }
+  button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 16px 0;
+  }
+  button:hover {
+    background-color: #444;
+  }  

@@ -1,0 +1,41 @@
+
+body {
+  margin: 0; /* remove the default margin */
+}
+
+
+.background {
+  /* background-image:url( '../../assets/Back.png'); */
+  background-size: cover;
+  background-color:   bisque; 
+  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding-top: 70px; /* add this line */
+}
+
+label, input, button {
+  margin: 10px 0;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #242d24;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}

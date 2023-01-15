@@ -1,0 +1,31 @@
+
+<div class="background">
+  <tr><h1 class="text-muted" >Connected Ethereum Wallet</h1></tr>
+  <div *ngIf="walletConnected" class="bg-gradient-to-r p-2 rounded-xl custom-gradient"></div>
+<div class="profile"> 
+    <img src="assets/40.jpg" alt="Profile Picture"  >
+    <div class="info">
+      <div>
+        <tr *ngIf="!saved">
+          <div>
+            <!-- <p class="h3">{{walletId}}</p> -->
+            <p class="h3">{{ nfts }}</p>
+            <button type="submit" class="btn btn-primary" (click)="SaveData()">Added</button>
+          </div>
+        </tr>
+      </div>
+      <tr *ngIf="saved">
+        <div class="collections">
+          <tr class="table-info" *ngFor="let p of profile">
+          </tr>
+          <p class="h3">Anonyme</p>
+          <p class="h3">{{ nfts[0] }}</p>
+          <!-- <p class="h3">{{walletId}}</p> -->
+          <p class="h3"></p>
+          <button onclick="location.href='/newnft'">Mint a new NFT</button>
+          <button onclick="location.href='/mynfts'">My NFTs</button>
+        </div>
+      </tr>
+    </div>
+  </div>
+</div>   

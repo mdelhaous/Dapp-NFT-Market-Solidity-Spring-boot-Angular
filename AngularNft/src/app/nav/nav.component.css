@@ -1,0 +1,31 @@
+nav {
+    position: fixed;
+    background-color:rgb(46, 43, 43);
+    padding: 20px;
+  }
+  
+  form {
+    float: right;
+    margin: 0;
+  }
+  
+  input {
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 4px;
+  }
+  
+  a {
+    color: #fff;
+    font-size: 15px;
+    padding: 0 20px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ccc;
+  }
+  

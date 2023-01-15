@@ -1,0 +1,18 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: PANIER
+  cloud:
+    discovery:
+      enabled: true
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://registry:8761/eureka/
+  instance:
+    hostname: registry

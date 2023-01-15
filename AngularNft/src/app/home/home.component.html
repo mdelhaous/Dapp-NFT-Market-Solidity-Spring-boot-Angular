@@ -1,0 +1,18 @@
+<!-- 
+ <div class="logo"></div>
+ <div class="slogan">Join the revolution in digital ownership with NFTs</div>
+ <div class="platform-name">NFT CASTLE</div>
+ <button  onclick="location.href='/connectwallet'"> CONNECT YOUR WALLET</button> -->
+
+<div class="background">
+  <!-- <div class="logo"></div> -->
+  <div class="slogan">Join the revolution in digital ownership with NFTs</div>
+  <div class="platform-name">NFT CASTLE</div>
+  <button *ngIf="!walletConnected" onclick="location.href='/connectwallet'" > CONNECT YOUR WALLET</button>
+  <h1 class="text-[3em] font-bold"*ngIf="walletConnected">WELCOME!!</h1>
+  <div class="images">
+    <img src="../../assets/40.jpg" height="200" width="200" />
+    <img src="../../assets/30.jpg" height="200" width="200" />
+    <img src="../../assets/NFT2.jpg" height="200" width="200" />
+  </div>
+</div> 

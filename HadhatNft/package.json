@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.1",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
+    "ether": "^0.0.9",
+    "ipfs-api": "^26.1.2",
+    "ipfs-http-client": "^59.0.0",
+    "ipfs-mini": "^1.1.5",
+    "web3-eth": "^1.8.1"
+  }
+}

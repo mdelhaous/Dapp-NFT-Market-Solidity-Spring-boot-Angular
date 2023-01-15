@@ -1,0 +1,17 @@
+
+<div class="background">
+    <div class ="product-list">
+      <div *ngFor="let nft of nfts">
+        <div class="product">
+          <img src="assets/40.jpg" alt="Product 1" alt="Product 1" width="200" height="200">
+          <div >
+            <p>NFT: {{ nft.nftName }}</p>
+            <p>FROM: {{ nft.nameofcollection }} collection</p>
+            <button class="add-to-cart-button"(click)="addtocard(nft.tokenId,nft.nftName,nft.nameofcollection,nft.nftOwner)">Add to Card</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  

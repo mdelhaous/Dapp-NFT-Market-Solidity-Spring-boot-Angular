@@ -1,0 +1,55 @@
+body {
+  margin: 0; /* remove the default margin */
+  padding-top: 60px; /* add padding to the top of the body element */
+}
+.background {
+  /* background-image:url( '../../assets/Back.png'); */
+  background-size: cover;
+  background-color:   bisque; 
+  position: fixed;
+  top: 60px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row; /* Set the flex direction to row */
+  width: 80%; /* Set the width of the element */
+  max-width: 1200px; /* Limit the maximum width of the element */
+  margin: 170px auto 0; /* Add a top margin to the element */
+}
+
+.product {
+  width: 200px;
+  margin: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a box shadow to the product element */
+  transition: all 0.3s ease; /* Add a transition to the product element */
+  
+}
+
+
+.product:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Change the box shadow on hover */
+  transform: scale(1.1); /* Scale the product element up slightly on hover */
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+
