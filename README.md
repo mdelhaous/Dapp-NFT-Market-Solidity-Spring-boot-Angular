@@ -74,14 +74,23 @@ Cette partie va vous permettre de comprendre les différentes étapes de dévelo
 ![Interface](https://github.com/alirahich01/pic/blob/master/peofiles.png?raw=true)
 ### Mint NFT
 ![Interface](https://github.com/alirahich01/pic/blob/master/MintNft.png?raw=true)
+### All NFTs
+![Interface](https://github.com/alirahich01/pic/blob/master/AllNfts.png?raw=true)
 ### Buy NFT
 ![Interface](https://github.com/alirahich01/pic/blob/master/Buynfts.png?raw=true)
 ![Interface](https://github.com/alirahich01/pic/blob/master/Buynft2.png?raw=true)
-## 2.Partie Data base
+## 3.Partie BackEnd
+### Microservices
+![Interface](https://github.com/alirahich01/pic/blob/master/micro.png?raw=true)
+## 4.Partie Data base
 ### Register
 ![Interface](https://github.com/alirahich01/pic/blob/master/DataBase.png?raw=true)
-## 3.Partie DevOps
+## 5.Partie SmartContract
+### HardHat Accounts
+![Interface](https://github.com/alirahich01/pic/blob/master/Hardhat.png?raw=true)
+## 5.Partie DevOps
 ### DevOps
+#### les images, réseaux, et les conteneurs docker utiliser
 ![Interface](https://github.com/alirahich01/pic/blob/master/DevOPs.png?raw=true)
 
 # Outils
